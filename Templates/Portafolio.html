@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/><!--//esta etiqueta es para el responsive design>-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="..\Static\Css\normalize.css"/>
+	<title>Portafolio</title>
+	<link rel="stylesheet" href="..\Static\Css\estilos.css"> <!--//esta es para insertAR desde css a html >-->
+	<!--<style    //esta es para insertAR desde css a html >
+	header{
+		background: black;
+	}
+	</style>-->
+
+	
+
+
+</head>
+<body>
+	<header id="Yo" class="Header">
+		<nav class="MainMenu">
+			<ul class="MainMenu-list"><!--  -->
+				<li class="MainMenu-item">
+					<a href="#Yo"  class="MainMenu-link">Yo</a></li>
+				
+				<li class="MainMenu-item">
+					<a href="#Perfil" class="MainMenu-link">perfil</a></li>
+				
+				<li class="MainMenu-item">
+					<a href="#Trabajo" class="MainMenu-link">trabajos</a></li>
+				
+				<li class="MainMenu-item">
+					<a href="#Contacto" class="MainMenu-link">contactos</a></li>
+				
+				<li id="mostrar-form"class="Publicar">
+					<a href="#Publicar" >Publicar</a></li>
+				
+				</li>
+                
+
+			</ul>
+
+		</nav>
+        
+        <form id="formulario" class="Formulario" action="">
+        	<input id="titulo" type="text"  placeholder="titulo" required >
+             <input id="url" type="url"  placeholder="link" >
+             <input id="mostrar-form" type="submit" value="agregar">
+        </form>
+
+		<figure class="Header-imageContainer"> <!--contiene todo lo q tiene q ver con figuras eje imagenes -->
+			<span class="icon-mail"></span>
+			<img src="../Static/Images/Perfil.jpg" alt="imagen personal" class="Header-image" width="150px" aling="center"><!--se crea la clase con clase madre header y como herencia image-->
+			<span class="icon-plus"></span>
+			<figcaption class="Header-imageDescription">
+				<a href="http://twiter.com/miketascon" target="_black "class="Header-link">@miketascon</a >
+			</figCaption>
+			<p class="Header-name">Maicol Andres Tascon</p>
+		</figure>
+		
+	</header>
+	<section id="Perfil" class="Profile">
+		<h2 class="Profile-title U-title">Mi perfil</h2>
+		<p class="Profile-description">Hola! si <span class="Profile-text">llegaste </span>hasta aqui puedes ver mi portafolio y contactarme</p>
+		<a class="Profile-link U-facebook" href="http:facebook.com/miketascon" target="_back">facebook</a>
+		<a class="Profile-link U-twitter" href="http:twiter.com/miketascon" target="_back">twiter</a>
+		<a class="Profile-link U-googlePlus" href="https://plus.google.com/+MaicolAndresTasconmiketascon" target="_back">google+</a>
+		
+	</section>
+	<section id="trabajo" class="Work">
+			<h2 class="Work-tittle U-title">Mi trabajo</h2>
+			<aside class="Work-video">
+				<video width="320" height="240" controls>
+					<source src="../static/videos/jaja.mp4" type="video/mp4"></source>
+					<source src="../static/videos/" type="video/ogv"></source>
+
+				</video>
+			</aside>
+	
+
+		
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img src="../static/images/riders.jpg" alt="es la descripcion de la imagen"  class="Work-image" width="230px">
+				<figcaption  class="Work-desription">
+					trabajo web realizado
+				</figcaption>
+			</figure>
+		</article>
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img src="../static/images/riders.jpg" alt="es la descripcion de la imagen" class="Work-image" width="230px">
+				<figcaption class="Work-desription">
+					trabajo web realizado
+				</figcaption>
+			</figure>
+		</article>
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img src="../static/images/riders.jpg" alt="es la descripcion de la imagen" class="Work-image" width="230px">
+				<figcaption class="Work-desription">
+					trabajo web realizado
+				</figcaption>
+			</figure>
+		</article>
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img src="../static/images/portada.jpg" alt="es la descripcion de la imagen" class="Work-image" width="230px">
+				<figcaption class="Work-desription" >
+					trabajo web realizado
+				</figcaption>
+			</figure>
+		</article>
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img src="../static/images/portada.jpg" alt="es la descripcion de la imagen" class="Work-image" width="230px">
+				<figcaption class="Work-desription">
+					trabajo web realizado
+				</figcaption>
+			</figure>
+		</article>
+		<article class="Work-item">
+			<figure class="Work-imageContainer">
+				<img src="../static/images/portada.jpg" alt="es la descripcion de la imagen" class="Work-image" width="230px">
+				<figcaption class="Work-desription"><!--- permite hacer descripcion a la imagen-->
+					trabajo web realizado 
+				</figcaption>
+			</figure>
+		</article>
+	</section>
+	<footer id="Contacto" class="Footer">
+		<div class="Footer-left">
+			<h3 class="Footer-title">Contacto</h3>
+		    <p class="Footer-description">si tienes una sugerencia o quieres trabajar conmigo ponte en contacto con este correo</p>
+		</div>
+		
+		<form class="Footer-form"><!---  formularios-->
+			<input type="text" placeholder="nombre"  class="Footer-formInput"><!--- permite ingresar cosas al  formulario--><br>
+		    <input type="Email" placeholder="email" class="Footer-formInput"><br>
+		    <textarea  placeholder="Motivo" class="Footer-textArea"></textarea><br>
+		    <button type="submit" class="Footer-button">contactarme</button><br>
+		</form> <!---  formularios-->
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="../Static/JS/Formulario.js"></script>
+	<script src="../Static/JS/scroll.js"></script>
+	
+</body>
+</html>
+
